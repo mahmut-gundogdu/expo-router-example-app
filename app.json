@@ -11,6 +11,11 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "scheme": "myapp",
+    "overrides": {
+      "metro": "0.76.0",
+      "metro-resolver": "0.76.0"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
