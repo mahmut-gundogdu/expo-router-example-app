@@ -1,7 +1,15 @@
-import {  Text } from 'react-native';
+import {  Button, Text } from 'react-native';
+import { useAuth } from '../../auth-context';
+export  function Login() {
+    const {signIn} = useAuth();
 
-export default function App() {
+    const handleClick = () => signIn();
+
   return (
+    <>
        <Text>Login Page</Text>
+       <Button onPress={handleClick} title="Sign-in" />
+       </>
     );
 }
+export default Login;
